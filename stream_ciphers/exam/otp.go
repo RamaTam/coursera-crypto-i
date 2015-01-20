@@ -1,3 +1,16 @@
+/*
+Question:
+
+Suppose you are told that the one time pad encryption of the message "attack at
+dawn" is 6c73d5240a948c86981bc294814d (the plaintext letters are encoded as
+8-bit ASCII and the given ciphertext is written in hex). What would be the one
+time pad encryption of the message "attack at dusk" under the same OTP key?
+
+Solution:
+
+	$ otp "attack at dusk"
+	c2 = 6c73d5240a948c86981bc2808548
+*/
 package main
 
 import (
