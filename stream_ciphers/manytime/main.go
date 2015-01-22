@@ -71,7 +71,7 @@ func main() {
 			bc1, bc2 := bcs[i], bcs[j]
 			minLen := int(math.Min(float64(len(bc1)), float64(len(bc2))))
 			for k := 0; k < minLen; k++ {
-				// 'A' ^ ' ' == 'a'
+				// E.g. 'A' ^ ' ' == 'a'
 				// 2 options: key[k] == bc1[k] ^ ' ' or key[k] == bc2[k] ^ ' '
 				x := bc1[k] ^ bc2[k]
 				if (x < 'A' || x > 'Z') && (x < 'a' || x > 'z') {
