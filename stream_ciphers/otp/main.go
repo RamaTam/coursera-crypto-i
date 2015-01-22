@@ -38,8 +38,7 @@ func main() {
 
 	bc1, err := hex.DecodeString(c1)
 	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+		panic(err)
 	}
 
 	if len(bc1) != len(m1) {
